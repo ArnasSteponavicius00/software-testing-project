@@ -69,17 +69,43 @@
     \end{itemize}
 \section{Testing Strategy}
     \subsection{Unit Testing}
+    Unit testing will be used to test individual components by teams, such as the menu functionality, level navigation, defeat scenarios and player control to name a few. This type of testing can only be used in certain areas as the game state constantly changes and therefore wont return consistent data in randomly generated scenarios of the game.
     \subsection{System and Integration Testing}
+    One specific team will be designated to test the interaction between the software and hardware of the game. The team will be responsible for monitoring hardware usage when the game is running and assessing it to check whether the game runs fine without using to much a systems resources. \newline
+    The team will test on different machines with different specifications to see interactions. If defects are found they must be reported as the interaction with the system and hardware is vital.
     \subsection{Performance and Stress Testing}
+    Similar to the testing in System and Integration testing section, A team will test the game on a variety of machines with varying specifications and observe results by pushing the game beyond a normal operating capacity to test the stability of the game. Some tests may include spawning a mass amount of items in a small area to check the stability of the game under a heavy load of item initialization and environment interaction.
     \subsection{User Acceptance Testing}
+    This test will work in tandem with Beta testing to ensure the game can be accepted by an users upon release. Depending on results and responses of the Beta testing stage. It will determine whether the game will pass the user acceptance test.
     \subsection{Batch Testing}
-    \subsection{Automated Regression Testing}
+    A team will be responsible for preparing scripts to run tests on the menu aspect of the game. This is to ensure all possible menu routes work correctly. 
     \subsection{Beta Testing}
+    The game will be released for a period of time to allow users to test out the product. Users will allowed to report defects that they find in the game and they will be closely monitored so they can be patched after the beta.
 
 \section{Test Schedule}
+\begin{itemize}
+    \item Gameplay (Weeks 1 - 3)
+    \begin{enumerate}
+        \item Movement
+        \item Object Interaction
+        \item Enemy Behaviour
+        \item Item usage
+        \item Combat Mechanics
+        \item Dialogue
+        \item End Game Conditions
+    \end{enumerate}
+    \item Hardware (Week 4)
+    \begin{enumerate}
+        \item Memory Interaction
+        \item CPU Usage
+        \item GPU Usage
+        \item Interaction with System Applications
+        \item Interaction with 3rd Party Applications
+    \end{enumerate}
+\end{itemize}
 
 \section{Control Procedures}
-
+Once a defect is found the individual who found the defect must create a GitHub issue on the private repository. This issue will then be brought up in the morning meetings where it will be assigned a priority. Based upon the priority of the defect it will be assigned to individual to be patched.
 \section{Features to be tested}
 
 \section{Features NOT to be tested}
